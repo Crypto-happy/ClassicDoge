@@ -1,0 +1,25 @@
+.wrong-network-modal {
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .modal-title {
+    font-weight: 500;
+  }
+
+  .warn {
+    margin-top: 1rem;
+  }
+
+  .switch-btn {
+    margin-top: 20px;
+    width: 100px;
+    align-self: center;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}

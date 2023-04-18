@@ -1,0 +1,22 @@
+.wallet-connect-modal {
+  padding: 0 1rem 1rem;
+}
+
+.connect-wallet-term {
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgb(31, 31, 58);
+  background-color: rgb(37, 41, 77);
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(195, 197, 203);
+  margin-top: 1rem;
+
+  a {
+    color: rgb(0, 91, 100);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+.component-pool-card {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 340px;
+  min-height: 300px;
+  margin: 20px;
+  background-color: rgb(31, 31, 58);
+  border: 2px solid rgb(31, 31, 67);
+  padding: 20px;
+  cursor: pointer;
+
+  @media screen and (max-width: 385px) {
+    width: 280px;
+  }
+
+  &:hover {
+    margin: 19px 21px 21px 19px;
+    box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 6px 0px;
+  }
+
+  .lock-status {
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid rgb(31, 31, 67);
+    color: white;
+    opacity: 1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      border-radius: 20px;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      background-color: rgb(0, 112, 121);
+    }
+  }
+
+  .pool-header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title-bar {
+      .title {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+      }
+      .min-stake {
+        font-weight: 500;
+        color: rgb(195, 197, 203);
+        font-size: 14px;
+      }
+    }
+    .avatar {
+      border-radius: 100px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .avatar.finished {
+      filter: grayscale(100%);
+    }
+  }
+
+  .apr {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .pool-description {
+    color: rgb(0, 195, 204);
+    font-size: 12px;
+  }
+
+  .stake-info {
+    margin-top: 10px;
+    .title {
+      display: flex;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      padding: 2px 0px;
+
+      @media screen and (max-width: 350px) {
+        font-size: 16px;
+      }
+      .token {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        img {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 10px;
+          border: 2px solid rgba(0, 0, 0, 0.3);
+          background-color: rgb(255, 255, 255);
+          color: rgb(86, 90, 105);
+        }
+
+        font-size: 16px;
+      }
+    }
+
+    .balance {
+      margin-left: 20px;
+      font-weight: 500;
+      color: rgb(195, 197, 203);
+      font-size: 14px;
+      @media screen and (max-width: 350px) {
+        font-size: 12px;
+      }
+    }
+
+    .no-reward-btn {
+      padding: 5px;
+      width: 120px;
+      border-radius: 5px;
+      background-color: rgb(0, 91, 100);
+      color: white;
+      cursor: auto;
+      box-shadow: none;
+      border: 1px solid transparent;
+      outline: none;
+      opacity: 0.4;
+      text-align: center;
+
+      @media screen and (max-width: 350px) {
+        font-size: 14px;
+        width: 100px;
+      }
+    }
+  }
+
+  .confirm-btn {
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: rgb(0, 91, 100);
+    color: white;
+    margin: 20px 3px 3px;
+    line-height: 1;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(0.99);
+      background-color: rgb(0, 68, 74);
+    }
+  }
+
+  .finish-status {
+    position: absolute;
+    right: 0px;
+    top: 103px;
+    box-sizing: border-box;
+    color: white;
+    opacity: 1;
+    pointer-events: none;
+    font-size: 18px;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+    background-color: rgb(108, 114, 132);
+    text-align: center;
+    padding: 5px 0px;
+    width: 200px;
+  }
+}

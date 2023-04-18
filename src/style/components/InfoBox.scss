@@ -1,0 +1,20 @@
+.component-infobox {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(128, 128, 128, 0.4) 0px 2px 6px;
+  border-radius: 8px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  .infobox-title {
+    color: rgba(195, 197, 203, 0.8);
+    margin-bottom: 5px;
+  }
+  .value {
+    font-size: 20px;
+    text-align: center;
+  }
+}

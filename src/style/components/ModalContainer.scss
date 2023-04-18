@@ -1,0 +1,61 @@
+.component-modal-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.424);
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+
+  .overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modal {
+    background-color: rgb(31, 31, 67);
+    border: 1px solid rgb(37, 41, 77);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 0px;
+    width: 50vw;
+    overflow: hidden;
+    align-self: center;
+    max-width: 420px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: all 0.4s;
+    transform: scale(0);
+    position: relative;
+    padding-top: 1rem;
+
+    .close-modal {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.component-modal-container.show {
+  visibility: visible;
+  opacity: 1;
+  .modal {
+    transition: all 0.4s;
+    transform: scale(1);
+  }
+}

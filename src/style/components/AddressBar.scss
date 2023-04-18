@@ -1,0 +1,31 @@
+.component-address-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  flex-wrap: wrap;
+
+  .label,
+  .address {
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  .copy-btn {
+    font-weight: 500;
+    color: rgb(108, 114, 132);
+    font-size: 0.825rem;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .copy-status {
+    font-size: 14px;
+    display: none;
+    color: rgb(231, 233, 240);
+  }
+}
